@@ -1,0 +1,3 @@
+Simple IE6 plugin. 
+
+As a warning bar, a div with class 'ie6warn' is added as the first element in the <body>, as a redirect the plugin will redirect the user to the specified location. Adding an ie6.php layout to your template can provide a great amount of flexability in what this redirect page can display.

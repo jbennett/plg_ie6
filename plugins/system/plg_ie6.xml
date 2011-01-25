@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>IE6 Redirct/warning</name>
+	<author>Jonathan Bennett</author>
+	<creationDate>January 24, 2011</creationDate>
+	<copyright></copyright>
+	<license></license>
+	<authorEmail>jbennett@ccistudios.com</authorEmail>
+	<authorUrl>www.ccistudios.com</authorUrl>
+	<version>0.1.0</version>
+	<description>Displays an IE6 warning bar at the top of the page or redirects to an update IE6 page</description>
+	<files>
+		<filename plugin="plg_ie6">plg_ie6.php</filename>
+	</files>
+	<params>
+		<param type="list" name="type" label="Method" description="Display a bar or redirt user?" default="bar">
+			<option value="bar">Banner Bar</option>
+			<option value="redirect">Redirect</option>
+		</param>
+		
+		<param type="text" name="redirect" label="Redirect URL" description="Location to redirect IE6 users to" default="/index.php?tmpl=ie6" />
+		<param type="textarea" name="message" label="Warning Message" description="Message to display in bar."
+			default="You are currently using an unsupported browser and may experience issues browsing the site." rows="5"/>
+		
+		<param type="list" name="test" label="Test" description="Testing forces all browsers to follow the IE6 logic." default="no">
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</param>
+		
+		<param type="list" name="css" label="Use Default CSS" default="yes">
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</param>
+	</params>
+</install>
